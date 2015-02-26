@@ -1,17 +1,4 @@
 #!/usr/bin/env perl
 
-use JSON::XS;
-use Data::Dumper;
-
-binmode(STDIN, ':raw');
-my $json = do { local $/; <STDIN> };
-my $data = decode_json($json);
-
-$Data::Dumper::Indent = 0;
-$Data::Dumper::Purity = 0;
-$Data::Dumper::Terse = 1;
-$Data::Dumper::Sortkeys = 1;
-$Data::Dumper::Quotekeys = 0;
-
-# TODO: "use utf8;" ou "use bytes;"
-print Dumper($data), "\n";
+use App::json2perl;
+exit App::json2perl::run;
