@@ -25,6 +25,10 @@ sub run
     binmode(STDIN, ':raw');
     my $data = decode_json do { local $/; <STDIN> };
 
+    if (my $enc_meth = $obj->can('encoding')) {
+	binmode(STDOUT, ':encoding('.$obj->$enc_meth().')');
+    }
+
     print $obj->dump($data);
 }
 
