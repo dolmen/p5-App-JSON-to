@@ -3,7 +3,7 @@ use warnings;
 
 package App::JSON::to::yaml;
 
-our $VERSION = '0.01';
+our $VERSION = '1.000';
 
 use YAML::Tiny ();
 

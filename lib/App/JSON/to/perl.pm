@@ -3,7 +3,7 @@ use warnings;
 
 package App::JSON::to::perl;
 
-our $VERSION = '0.01';
+our $VERSION = '1.000';
 
 use Data::Dumper ();
 

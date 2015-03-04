@@ -4,7 +4,7 @@ use warnings;
 package App::JSON::to;
 # ABSTRACT: Convert JSON data to various formats
 
-our $VERSION = '0.01';
+our $VERSION = '1.000';
 
 use JSON::MaybeXS qw<decode_json>;
 
