@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!perl
 use App::JSON::to;
 exit App::JSON::to::run(@ARGV)
 __END__
